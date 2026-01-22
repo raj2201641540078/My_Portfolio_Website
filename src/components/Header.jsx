@@ -14,7 +14,10 @@ import {
   FaCertificate,
   FaUserGraduate,
   FaMedal,
+<<<<<<< HEAD
   FaFileAlt,
+=======
+>>>>>>> e08480aa428b92c43267836937667e4a07808e2a
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
@@ -48,7 +51,10 @@ export default function Header() {
       text: "Education",
       path: "/education",
     },
+<<<<<<< HEAD
     { id: "resume", icon: FaFileAlt, text: "Resume", path: "/resume" },
+=======
+>>>>>>> e08480aa428b92c43267836937667e4a07808e2a
     { id: "achievements", icon: FaTrophy, text: "Achievements", path: "/achievements" },
     { id: "certifications", icon: FaMedal, text: "Certifications", path: "/certifications" },
     { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
