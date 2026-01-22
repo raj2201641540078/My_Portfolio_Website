@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import Hero from "./components/Hero";
-import "./assets/css/index.css";
+import { Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-<<<<<<< HEAD
 import Resume from "./components/Resume";
-=======
->>>>>>> e08480aa428b92c43267836937667e4a07808e2a
-import { Route, Routes } from "react-router-dom";
 import Achievements from "./components/Achievements";
 import Certifications from "./components/Certifications";
+
+import "./assets/css/index.css";
 
 export default function App() {
   const [isOnePage, setIsOnePage] = useState(false); // Toggle state
@@ -21,9 +20,8 @@ export default function App() {
   return (
     <>
       <Header />
-      {/* Conditional Rendering */}
+
       {isOnePage ? (
-        // One-Page Mode: Render all components together
         <>
           <Hero />
           <Skills />
@@ -34,16 +32,12 @@ export default function App() {
           <Certifications />
         </>
       ) : (
-        // Router Mode: Use routes for navigation
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
-<<<<<<< HEAD
           <Route path="/resume" element={<Resume />} />
-=======
->>>>>>> e08480aa428b92c43267836937667e4a07808e2a
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/achievements" element={<Achievements />} />
